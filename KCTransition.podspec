@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
+  # s.platform     = :ios
   s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -91,11 +91,16 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "KCTransition/KCCircleTransition/*"
-  #s.exclude_files = "Classes/Exclude"
+  # s.source_files  = "KCTransition/KCCircleTransition/*"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
+  s.default_subspec = 'KCTransition'
+  
+  s.subspec 'KCTransition' do |transition|     transition.source_files = 'KCTransition/*'   end
+
+  s.subspec 'KCCircleTransition' do |circleTransition|     circleTransition.source_files = 'KCTransition/KCCircleTransition/*'   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

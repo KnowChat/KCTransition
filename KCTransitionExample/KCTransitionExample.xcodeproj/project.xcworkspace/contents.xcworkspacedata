@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:KCTransition.xcodeproj">
+      location = "self:KCTransitionExample.xcodeproj">
    </FileRef>
 </Workspace>
