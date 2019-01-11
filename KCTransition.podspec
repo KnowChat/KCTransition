@@ -99,7 +99,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'KCTransition'
   
   s.subspec 'KCTransition' do |transition|
-    transition.source_files = 'KCTransition/*'
+    transition.source_files = 'KCTransition/**/*'
   end
 
   s.subspec 'KCCircleTransition' do |circletransition|
